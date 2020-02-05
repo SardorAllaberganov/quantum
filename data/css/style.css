@@ -233,6 +233,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  z-index: 99;
 }
 
 .navbar-list li {
@@ -266,6 +267,8 @@ body {
 }
 
 .header-text {
+  height: 100%;
+  z-index: 9;
   position: absolute;
   right: 75px;
   top: 50%;
@@ -312,13 +315,11 @@ body {
 }
 
 .header-text button:hover {
-  background: #E18B23;
-  color: #fff;
+  background: rgba(236, 191, 80, 0.1);
   -webkit-background-clip: none;
-  -webkit-text-fill-color: #eee;
+  -webkit-text-fill-color: #E18B23;
   -webkit-transition: all .1s;
   transition: all .1s;
-  font-weight: 500;
 }
 
 .social-icon {
@@ -328,11 +329,13 @@ body {
   display: flex;
   list-style: none;
   bottom: 20px;
-  right: 75px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .social-icon li {
-  margin: 0 10px;
+  margin: 0 20px 0;
 }
 
 .social-icon li img {
